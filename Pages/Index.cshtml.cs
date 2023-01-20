@@ -15,6 +15,8 @@ namespace TempDataDeleteCookieExample.Pages
 
         public void OnGet()
         {
+            var result = TempData.Peek("obj");
+            Debug.WriteLine("TempData: " + result);
         }
     }
 }
